@@ -1,0 +1,32 @@
+.header {
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 75%, 0% 100%);
+  background-size: cover;
+  @include respond(phone){
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+  }
+
+  &--home {
+    height: 100vh;
+    background-image: linear-gradient(rgba($color-white, .6), rgba($color-white, .6)), url(../img/plitvice.jpg);
+  }
+
+  &--contact {
+    height: 60vh;
+    background-position: bottom;
+    background-image: linear-gradient(rgba($color-white, .6), rgba($color-white, .6)), url(../img/stonehenge.jpg);
+  }
+
+  &--about{
+    height: 60vh;
+    background-image: linear-gradient(rgba($color-white, .6), rgba($color-white, .6)), url(../img/horseshoe-bend.jpg);
+  }
+
+  &__text-box {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    letter-spacing: 1px;
+  }
+}

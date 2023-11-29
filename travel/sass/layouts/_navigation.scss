@@ -1,0 +1,51 @@
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10rem;
+  align-items: center;
+  height: 10rem;
+  @include respond(phone){
+    padding: 0 2rem;
+  }
+
+  &__logo {
+    font-size: 2.5rem;
+    text-decoration: none;
+    color: $color-dark;
+    font-weight: 900;
+    text-transform: uppercase;
+    transition: .3s;
+
+    &:hover {
+      color: $color-primary;
+    }
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    align-items: center;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $color-dark;
+    font-size: 1.8rem;
+    font-weight: 800;
+    text-transform: uppercase;
+  }
+
+  &__item {
+    border-bottom: 2px solid transparent;
+    transition: .3s;
+
+    &:not(:last-child) {
+      margin-right: 2.5rem;
+    }
+
+    &:hover {
+      border-bottom: 2px solid $color-primary;
+    }
+  }
+}
