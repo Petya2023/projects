@@ -1,0 +1,68 @@
+.btn {
+  &,
+  &:link,
+  &:visited {
+    text-decoration: none;
+    font-size: 1.8rem;
+    padding: 1.5rem 3rem;
+    border-radius: 0.5rem;
+    border: none;
+    text-transform: uppercase;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    font-family: "Lato";
+    transition: all 0.3s;
+    will-change: transform;
+  }
+
+  &--white {
+    background-color: $color-white;
+    color: rgba($color-dark, 0.7);
+    box-shadow: 0.2rem 0.6rem 1rem rgba($color-dark, 0.15);
+
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0.2rem 1.2rem 1rem rgba($color-dark, 0.15);
+    }
+  }
+
+  &--green {
+    background: linear-gradient(to right, $color-primary, $color-secondary);
+    color: $color-white;
+
+    &:after {
+      position: absolute;
+      background: linear-gradient(to right, $color-primary, $color-green-light);
+      opacity: 0;
+      top: 0;
+      left: 0;
+      padding: 1.5rem 3rem;
+      border-radius: 0.5rem;
+      display: inline-flex;
+      align-items: center;
+      transition: all 0.3s;
+    }
+  }
+
+  &--book-now::after {
+    content: "Book Now";
+  }
+
+  &--learn-more::after {
+    content: "Learn More";
+  }
+
+  &--submit::after {
+    content: "Send Message";
+  }
+
+  &:hover:after {
+    opacity: 1;
+  }
+
+  &:active {
+    transform: scale(0.97);
+  }
+}
