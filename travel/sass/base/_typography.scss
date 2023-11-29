@@ -1,0 +1,49 @@
+body {
+  font-family: "Lato";
+  color: $color-dark;
+}
+
+.paragraph {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+
+.text-colored {
+  background: linear-gradient(to right, $color-primary, $color-secondary);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 6rem;
+
+  @include respond(phone) {
+    font-size: 5rem;
+  }
+}
+
+h2 {
+  font-size: 4rem;
+  @include respond(tab-port) {
+    font-size: 3rem;
+  }
+  @include respond(phone) {
+    font-size: 2.5rem;
+  }
+}
+
+h3 {
+  font-size: 2.5rem;
+  line-height: 1.7;
+}
+
+h4 {
+  font-size: 1.5rem;
+}

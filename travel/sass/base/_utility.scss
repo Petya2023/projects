@@ -1,0 +1,41 @@
+.container {
+  max-width: 114rem;
+  margin: 0 auto;
+  @include respond(tab-land) {
+    max-width: 94rem;
+  }
+  @include respond(tab-port) {
+    max-width: 72rem;
+  }
+}
+
+.section {
+  padding: 12rem 0;
+}
+
+.u-text-center {
+  text-align: center;
+}
+
+.u-margin-bottom-tiny {
+  margin-bottom: 1rem !important;
+}
+
+.u-margin-bottom-small {
+  margin-bottom: 2rem !important;
+}
+
+.u-margin-bottom-medium{
+  margin-bottom: 4rem !important;
+}
+
+.u-margin-bottom-big {
+  margin-bottom: 8rem !important;
+  @include respond(tab-port) {
+    margin-bottom: 6rem !important;
+  }
+}
+
+.u-margin-bottom-huge{
+  margin-bottom: 10rem !important;
+}
