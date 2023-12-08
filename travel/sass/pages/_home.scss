@@ -74,6 +74,9 @@
 
     &:hover {
       transform: translateY(-1rem) scale(1.03);
+      @media only screen and (hover: none) {
+        transform: translateY(0) scale(1);
+      }
     }
   }
 
