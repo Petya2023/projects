@@ -20,12 +20,12 @@
   &--white {
     background-color: $color-white;
     color: rgba($color-dark, 0.7);
-    box-shadow: 0.2rem 0.6rem 1rem rgba($color-dark, 0.15);
+    // box-shadow: 0.2rem 0.6rem 1rem rgba($color-dark, 0.15);
 
-    &:hover {
-      transform: translateY(-2px);
-      box-shadow: 0.2rem 1.2rem 1rem rgba($color-dark, 0.15);
-    }
+    // &:hover {
+    //   transform: translateY(-2px);
+    //   box-shadow: 0.2rem 1.2rem 1rem rgba($color-dark, 0.15);
+    // }
   }
 
   &--green {
