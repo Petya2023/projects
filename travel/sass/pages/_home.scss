@@ -74,10 +74,12 @@
 
     &:hover {
       transform: translateY(-1rem) scale(1.03);
-      @media only screen and (hover: none) {
-        transform: translateY(0) scale(1);
-      }
     }
+    @media only screen and (max-width: 56.25em), only screen and (hover: none)  {
+        &:hover {
+      transform: translateY(0) scale(1);
+    }
+      }
   }
 
   &__icon {
