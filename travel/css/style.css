@@ -113,11 +113,7 @@ h4 {
 
 .btn--white {
   background-color: #fff;
-  color: rgba(34, 34, 34, 0.7);
-  box-shadow: 0.2rem 0.6rem 1rem rgba(34, 34, 34, 0.15); }
-  .btn--white:hover {
-    transform: translateY(-2px);
-    box-shadow: 0.2rem 1.2rem 1rem rgba(34, 34, 34, 0.15); }
+  color: rgba(34, 34, 34, 0.7); }
 
 .btn--green {
   background: linear-gradient(to right, #1a9605, #83c469);
