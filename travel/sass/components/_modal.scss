@@ -38,6 +38,11 @@
     background: rgba($color-white, 0.9);
     display: flex;
     align-items: center;
+    @media (max-width: 56.25em){
+      width: 100%;
+      clip-path: none;
+      justify-content: center;
+    }
   }
 
   &__text {
@@ -46,6 +51,9 @@
     align-items: center;
     justify-content: space-between;
     max-width: 75%;
+    @media (max-width: 56.25em){
+      max-width: 100%;
+    }
   }
 
   &__close {
@@ -53,7 +61,7 @@
     text-decoration: none;
     position: absolute;
     top: 0;
-    right: 1%;
+    right: 1rem;
     color: $color-secondary;
     cursor: pointer;
 
@@ -71,6 +79,7 @@
     opacity: 1;
     transform: translate(-50%, -50%) scale(1);
   }
+
 }
 
 .visible {
