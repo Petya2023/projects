@@ -681,9 +681,9 @@ h4 {
     margin-bottom: 3rem; }
     .holidays__holiday:hover {
       transform: translateY(-1rem) scale(1.03); }
-      @media only screen and (hover: none) {
-        .holidays__holiday:hover {
-          transform: translateY(0) scale(1); } }
+    @media only screen and (max-width: 56.25em), only screen and (hover: none) {
+      .holidays__holiday:hover {
+        transform: translateY(0) scale(1); } }
   .holidays__icon {
     font-size: 6rem;
     width: 15rem;
