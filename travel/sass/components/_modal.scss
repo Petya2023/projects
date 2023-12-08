@@ -28,6 +28,7 @@
     height: 50rem;
     transform: translate(-50%, -50%) scale(0.5);
     transition: all 0.4s 0.2s;
+    border-radius: .5rem
   }
 
   &__left {
@@ -38,11 +39,14 @@
     background: rgba($color-white, 0.9);
     display: flex;
     align-items: center;
+    border-radius: .5rem 0 0 .5rem;
     @media (max-width: 56.25em){
       width: 100%;
       clip-path: none;
       justify-content: center;
+      border-radius: .5rem;
     }
+    
   }
 
   &__text {
@@ -61,7 +65,7 @@
     text-decoration: none;
     position: absolute;
     top: 0;
-    right: 1rem;
+    right: 1.5rem;
     color: $color-secondary;
     cursor: pointer;
 
