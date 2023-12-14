@@ -17,7 +17,7 @@
   }
   @media only screen and (max-width: 75em), only screen and (hover: none) {
     &:hover .card {
-      transform: rotateY(0);
+      transform: none;
     }
     height: auto;
   }
@@ -35,13 +35,14 @@
     width: 100%;
     height: 100%;
     color: $color-dark;
+    background-color: $color-light;
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     backface-visibility: hidden;
     overflow: hidden;
-    border-radius: 1.5rem;
+    border-radius: 0.5rem;
 
     &--front {
       background-color: $color-white;
@@ -165,10 +166,10 @@
       position: relative;
       height: 44rem;
       box-shadow: none;
-      border-radius: 1.5rem 1.5rem 0 0;
+      border-radius: 0.5rem 0.5rem 0 0;
 
       &--back {
-        border-radius: 0 0 1.5rem 1.5rem;
+        border-radius: 0 0 0.5rem 0.5rem;
         transform: rotateY(0);
         height: 20rem;
       }
