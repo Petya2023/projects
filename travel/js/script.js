@@ -81,7 +81,6 @@ for (let i = 0; i < btnsOpenModal.length; i++) {
   btnsOpenModal[i].addEventListener("click", openModal);
 }
 
-// //като кликнем върху class 'modal' да добавим клас hidden с display: none;
 const closeModal = function () {
   modal.classList.remove('visible');
   modalContent.classList.remove('visible--content');
@@ -95,5 +94,15 @@ document.addEventListener("keydown", function (e) {
     if (!modal.classList.contains(".visible") ) {
       closeModal();
     }
+  }
+});
+
+const navList = document.querySelector('.navigation__list');
+
+window.addEventListener("resize", function () {
+  if (phone.matches) {
+    navList.classList.add('hidden');
+  } else {
+    navList.classList.remove('hidden');
   }
 });
