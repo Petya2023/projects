@@ -99,10 +99,10 @@ document.addEventListener("keydown", function (e) {
 
 const navList = document.querySelector('.navigation__list');
 
-window.addEventListener("resize", function () {
-  if (phone.matches) {
-    navList.classList.add('hidden');
-  } else {
-    navList.classList.remove('hidden');
-  }
-});
+// window.addEventListener("resize", function () {
+//   if (phone.matches) {
+//     navList.classList.add('hidden');
+//   } else {
+//     navList.classList.remove('hidden');
+//   }
+// });
