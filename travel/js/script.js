@@ -99,6 +99,10 @@ document.addEventListener("keydown", function (e) {
 
 const navList = document.querySelector('.navigation__list');
 
+if (!phone.matches) {
+  navList.classList.remove('hidden')
+}
+
 window.addEventListener("resize", function () {
   if (window.matchMedia("(min-width: 600px)").matches) {
     navList.classList.remove("hidden");
