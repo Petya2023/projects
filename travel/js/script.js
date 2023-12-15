@@ -97,16 +97,17 @@ document.addEventListener("keydown", function (e) {
   }
 });
 
+// NAVIGATION
 const navList = document.querySelector('.navigation__list');
 
-if (!phone.matches) {
-  navList.classList.remove('hidden')
+if (phone.matches) {
+  navList.classList.add('hidden')
 }
 
 window.addEventListener("resize", function () {
-  if (window.matchMedia("(min-width: 600px)").matches) {
-    navList.classList.remove("hidden");
+  if (phone.matches) {
+    navList.classList.add('hidden');
   } else {
-    navList.classList.add("hidden");
+    navList.classList.remove('hidden');
   }
 });
