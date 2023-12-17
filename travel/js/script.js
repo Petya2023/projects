@@ -98,16 +98,16 @@ document.addEventListener("keydown", function (e) {
 });
 
 // NAVIGATION
-const navList = document.querySelector('.navigation__list');
+// const navList = document.querySelector('.navigation__list');
 
-if (phone.matches) {
-  navList.classList.add('hidden')
-}
+// if (phone.matches) {
+//   navList.classList.add('hidden')
+// }
 
-window.addEventListener("resize", function () {
-  if (phone.matches) {
-    navList.classList.add('hidden');
-  } else {
-    navList.classList.remove('hidden');
-  }
-});
+// window.addEventListener("resize", function () {
+//   if (phone.matches) {
+//     navList.classList.add('hidden');
+//   } else {
+//     navList.classList.remove('hidden');
+//   }
+// });
