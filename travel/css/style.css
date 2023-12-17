@@ -15,7 +15,6 @@ html {
   @media only screen and (max-width: 56.25em) {
     html {
       font-size: 50%; } }
-
 body {
   box-sizing: border-box; }
 
@@ -46,7 +45,6 @@ h1 {
   @media only screen and (max-width: 37.5em) {
     h1 {
       font-size: 5rem; } }
-
 h2 {
   font-size: 4rem; }
   @media only screen and (max-width: 56.25em) {
@@ -55,9 +53,9 @@ h2 {
   @media only screen and (max-width: 37.5em) {
     h2 {
       font-size: 2.5rem; } }
-
 h3 {
-  font-size: 2.5rem; }
+  font-size: 2.5rem;
+  line-height: 1.7; }
 
 h4 {
   font-size: 1.5rem; }
@@ -71,7 +69,6 @@ h4 {
   @media only screen and (max-width: 56.25em) {
     .container {
       max-width: 72rem; } }
-
 .section {
   padding: 12rem 0; }
 
@@ -92,7 +89,6 @@ h4 {
   @media only screen and (max-width: 56.25em) {
     .u-margin-bottom-big {
       margin-bottom: 6rem !important; } }
-
 .u-margin-bottom-huge {
   margin-bottom: 10rem !important; }
 
@@ -265,8 +261,7 @@ h4 {
     .scene {
       height: auto; }
       .scene:hover .card {
-        transform: rotateY(0); } }
-
+        transform: none; } }
 .card {
   width: 100%;
   height: 100%;
@@ -285,7 +280,7 @@ h4 {
     right: 0;
     backface-visibility: hidden;
     overflow: hidden;
-    border-radius: .5rem; }
+    border-radius: 0.5rem; }
     .card__side--front {
       background-color: #fff; }
     .card__side--back {
@@ -318,17 +313,16 @@ h4 {
   .card__title-span--2 {
     background-image: linear-gradient(to right, rgba(246, 100, 92, 0.9), rgba(245, 147, 142, 0.9)); }
   .card__details {
-    height: 30rem;
-    height: fit-content; }
+    height: 25rem; }
     .card__details ul {
+      height: 100%;
       list-style: none;
       width: 80%;
       margin: auto;
-      padding: 2rem 0; }
-      .card__details ul li {
-        font-size: 1.5rem;
-        font-weight: 300;
-        padding: 1.8rem 0; }
+      padding: 3rem 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; }
   .card__icon {
     margin-right: 2rem; }
     .card__icon--check {
@@ -352,12 +346,11 @@ h4 {
       position: relative;
       height: 44rem;
       box-shadow: none;
-      border-radius: .5rem .5rem 0 0; }
+      border-radius: 0.5rem 0.5rem 0 0; }
       .card__side--back {
-        border-radius: 0 0 .5rem .5rem;
+        border-radius: 0 0 0.5rem 0.5rem;
         transform: rotateY(0);
         height: 20rem; } }
-
 .arrow {
   cursor: pointer;
   font-size: 1.2rem;
@@ -509,7 +502,8 @@ h4 {
 
 .composition {
   display: inline-flex;
-  justify-content: center; }
+  justify-content: center;
+  padding: 0 1rem; }
   .composition__img-box {
     height: 25rem;
     width: 20rem;
@@ -641,7 +635,6 @@ h4 {
   @media only screen and (max-width: 37.5em) {
     .destinations__grid {
       grid-template-columns: 1fr; } }
-
 .testimonials {
   background-color: #f6f6f6; }
   .testimonials__box {
@@ -667,7 +660,6 @@ h4 {
     @media only screen and (max-width: 37.5em) {
       .testimonials__arrows {
         left: 90%; } }
-
 .holidays {
   background-image: linear-gradient(to right, rgba(26, 150, 5, 0.75), rgba(131, 196, 105, 0.75)), url(../img/boat.jpg);
   background-position: center;
@@ -689,7 +681,7 @@ h4 {
       transform: translateY(-1rem) scale(1.03); }
     @media only screen and (max-width: 56.25em), only screen and (hover: none) {
       .holidays__holiday:hover {
-        transform: translateY(0) scale(1); } }
+        transform: none; } }
   .holidays__icon {
     font-size: 6rem;
     width: 15rem;
@@ -707,9 +699,8 @@ h4 {
   gap: 3rem; }
   @media only screen and (max-width: 56.25em) {
     .cards {
-      gap: 5rem;
+      gap: 8rem;
       grid-template-columns: repeat(1, 1fr); } }
-
 .contact__icon {
   font-size: 4rem; }
 
@@ -721,7 +712,8 @@ h4 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 28rem; }
+  width: 28rem;
+  padding: 0 1rem; }
   .contact__info:not(:last-child) {
     border-right: 1px solid #1a9605; }
 
@@ -733,7 +725,8 @@ h4 {
   flex-direction: column;
   max-width: 60rem;
   margin: 0 auto;
-  align-items: center; }
+  align-items: center;
+  padding: 0 1rem; }
 
 .contact__map {
   width: 100%;
