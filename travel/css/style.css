@@ -27,9 +27,10 @@ body {
 
 p {
   font-size: 1.6rem;
-  line-height: 1.4;
-  display: inline-block; }
-
+  line-height: 1.4; }
+  @media only screen and (max-width: 37.5em) {
+    p {
+      line-height: normal; } }
 .text-colored {
   background: linear-gradient(to right, #1a9605, #83c469);
   -webkit-background-clip: text;
@@ -325,8 +326,11 @@ h4 {
       display: flex;
       flex-direction: column;
       justify-content: space-between; }
+  .card__paragraph {
+    display: inline; }
   .card__icon {
-    margin-right: 2rem; }
+    font-size: 1.5rem;
+    margin-right: 1.5rem; }
     .card__icon--check {
       color: #1a9605; }
     .card__icon--cross {
@@ -753,6 +757,6 @@ h4 {
         margin: 0;
         width: 33rem;
         text-align: center; } }
-  @media only screen and (max-width: 37.5em) {
+  @media only screen and (max-width: 56.25em) {
     .about {
       flex-direction: column; } }
