@@ -3,9 +3,10 @@ body {
   color: $color-dark;
 }
 
-.paragraph {
+p {
   font-size: 1.6rem;
   line-height: 1.4;
+  display: inline-block;
 }
 
 .text-colored {
@@ -31,9 +32,11 @@ h1 {
 
 h2 {
   font-size: 4rem;
+
   @include respond(tab-port) {
     font-size: 3rem;
   }
+
   @include respond(phone) {
     font-size: 2.5rem;
   }
