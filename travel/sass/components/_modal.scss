@@ -25,6 +25,7 @@
       background-position: center;
       background-size: cover;
       width: 75%;
+      min-height: 50rem;
       transform: translate(-50%, -50%) scale(0.5);
       transition: all 0.4s 0.2s;
       border-radius: .5rem
@@ -32,7 +33,7 @@
   
     &__left {
       width: 60%;
-      height: 100%;
+      min-height: 50rem;
       clip-path: polygon(0 0, 100% 0, 75% 100%, 0 100%);
       padding: 6rem;
       background: rgba($color-white, 0.9);
