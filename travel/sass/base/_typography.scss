@@ -6,7 +6,9 @@ body {
 p {
   font-size: 1.6rem;
   line-height: 1.4;
-  display: inline-block;
+  @include respond(phone){
+    line-height: normal;
+  }
 }
 
 .text-colored {
