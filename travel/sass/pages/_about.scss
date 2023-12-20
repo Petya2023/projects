@@ -1,18 +1,18 @@
 .about {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  &__right {
-    max-width: 55rem;
-    display: inline-block;
-    margin-left: 10rem;
-    @include respond(phone) {
-      margin: 0;
-      width: 33rem;
-      text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__right {
+      max-width: 55rem;
+      display: inline-block;
+      margin-left: 10rem;
+      @include respond(phone) {
+        margin: 0;
+        width: 33rem;
+        text-align: center;
+      }
+    }
+    @include respond(tab-port) {
+      flex-direction: column;
     }
   }
-  @include respond(phone) {
-    flex-direction: column;
-  }
-}
